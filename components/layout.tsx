@@ -6,6 +6,7 @@ import { FC } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Head from 'next/head';
 
 const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -34,11 +35,11 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <html lang="en">
-      <head>
+      <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Aditya Bhatt | Frontend Engineer</title>
-      </head>
+      </Head>
       <body className="bg-primary text-gray-100">
         <div className="flex flex-col min-h-screen">
           <motion.header

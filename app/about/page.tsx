@@ -86,7 +86,7 @@ const AboutPage: FC = () => {
                 className="text-4xl md:text-5xl font-extrabold leading-tight"
                 variants={itemVariants}
               >
-                Hello, I'm
+                Hello, I&#39;m
                 <br />
                 <motion.span
                   className="text-highlight inline-block"

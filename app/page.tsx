@@ -57,7 +57,7 @@ const HomePage: FC = () => {
               className="inline-block bg-accent p-2 rounded-lg text-sm font-semibold"
               variants={itemVariants}
             >
-              👋 Hi there! I'm Aditya Bhatt
+              👋 Hi there! I&#39;m Aditya Bhatt
             </motion.span>
             <motion.h1
               className="text-3xl md:text-5xl font-extrabold leading-snug"

@@ -81,7 +81,7 @@ const ContactPage: FC = () => {
             >
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
               <p className="mb-6 text-highlight/80">
-                I'd love to hear from you! Whether you have a question or just want to say hi, feel free to drop a message.
+                I&#39;d love to hear from you! Whether you have a question or just want to say hi, feel free to drop a message.
               </p>
               <div className="space-y-4">
                 {contactInfo.map((item, index) => (
