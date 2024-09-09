@@ -1,14 +1,17 @@
 import Layout from '@/components/layout';
 import { FC } from 'react';
-import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Mail } from 'lucide-react'
 
 const AboutPage: FC = () => {
   return (
     <Layout>
       <div className="bg-primary min-h-screen flex flex-col justify-center items-center text-white">
-        {/* Hero Section */}
-        Show my Resume
+        <div className="w-full h-screen">
+          <iframe
+            src="/pdf/aditya_resume.pdf"
+            className="w-full h-full"
+            title="Aditya's Resume"
+          />
+        </div>
       </div>
     </Layout>
   );

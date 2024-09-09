@@ -4,6 +4,7 @@ import { FC, useState, useEffect } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import Layout from '../components/layout'
+import Link from 'next/link';
 
 const HomePage: FC = () => {
   const [isHovered, setIsHovered] = useState(false)
@@ -103,14 +104,16 @@ const HomePage: FC = () => {
             >
               Over 3 years of experience leveraging programming tools to deliver high-quality results. Expert in full stack development with a focus on creating scalable and efficient solutions.
             </motion.p>
-            <motion.button
-              className="bg-highlight text-primary font-semibold px-6 py-3 rounded-lg mt-4 hover:bg-highlight-rgb transition-colors duration-300"
-              variants={itemVariants}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Get in Touch
-            </motion.button>
+            <Link href="/contact" passHref>
+              <motion.button
+                className="bg-highlight text-primary font-semibold px-6 py-3 rounded-lg mt-4 hover:bg-highlight-rgb transition-colors duration-300"
+                variants={itemVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                Get in Touch
+              </motion.button>
+            </Link>
           </div>
 
           {/* Right Section - Illustration */}

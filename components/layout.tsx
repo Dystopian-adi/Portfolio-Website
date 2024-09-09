@@ -38,7 +38,7 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Aditya Bhatt | Frontend Engineer</title>
+        <title>Aditya Bhatt</title>
       </Head>
       <body className="bg-primary text-gray-100">
         <div className="flex flex-col min-h-screen">
